@@ -12,7 +12,11 @@
     </tr>
   </thead>
   <tbody>
-
- 
+    <% @recipes.each do |recipe| %>
+      <tr>
+        <td><%= recipe.title %></td>
+        <td><%= recipe.instructions %></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
